@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <h1>Firebase Example
+        <br />
+        <small>Student ID</small>
+    </h1>
+
+    <ul id="studentList">
+        <div id="studentInfo">
+            <p>
+                Name:
+                <strong class ="studentDetail"></strong>
+            </p>
+            <p>
+                Age:
+                <strong class="studentAge"></strong>
+            </p>
+            <p>
+                Email:
+                <strong class="studentEmail"></strong>
+            </p>
+        </div>
+    </ul>
+
+    <script src="app.js"></script>
+    <script type="module">
+
+        // Import the functions you need from the SDKs you need
+      
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
+      
+        // TODO: Add SDKs for Firebase products that you want to use
+      
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+      
+        // Your web app's Firebase configuration
+      
+        const firebaseConfig = {
+      
+          apiKey: "AIzaSyDPZZexwXR0i0-sYgE7cYLb_bjAEMg1TOs",
+      
+          authDomain: "fir-training-ac8e6.firebaseapp.com",
+      
+          projectId: "fir-training-ac8e6",
+      
+          storageBucket: "fir-training-ac8e6.appspot.com",
+      
+          messagingSenderId: "1014609337991",
+      
+          appId: "1:1014609337991:web:a566974bbdabc44be7e222"
+      
+        };
+      
+      
+        // Initialize Firebase
+      
+        const app = initializeApp(firebaseConfig);
+      
+      </script>
+
+</body>
+</html>
