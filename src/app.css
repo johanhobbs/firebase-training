@@ -37,7 +37,13 @@ h1 {
 
 #studentsList li:hover{
     background-color: lightblue;
-    color: black;
-    font-style: bold;
 }
 
+#studentInfo{
+    float:left;
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid yellowgreen;
+    color: white;
+}
