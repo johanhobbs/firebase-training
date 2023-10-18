@@ -53,3 +53,19 @@ const getContacts = async () => {
 }
 
 getContacts()
+
+//SECTION - Display contacts as list item
+
+const contactList = document.getElementById("contact-list")
+
+const showContacts = (contact) => {
+    contacts.forEach(contact) => {
+        const li = `
+        <li class="contact-list-item" id=${contact.id}>
+        <div class="media">
+        <div class = "letter">${contact.firstname.charAt(0)}${contact/lastname.charAt(0)</div>
+        </div>  
+        </li>
+
+    }
+}
