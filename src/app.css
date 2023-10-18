@@ -1,49 +1,78 @@
-body, h1 {
-    margin: 0;
-    padding: 0;
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    background-color: navy;
-    font-family: 'Courier New', Courier, monospace;
+#app-layout{
+    display: flex;
 }
 
-h1 {
-    padding: 10px;
-    background-color: red;
+#app-layout #left-col{
+    flex:1;
 }
 
-#studentsList {
-    margin: 0;
-    padding: 0;
-    width: 250px;
-    float: left;
-    border: 2px solid white;
+#app-layout #right-col{
+    flex:3;
 }
 
-#studentsList h2{
-    padding: 10px;
-    margin: 0;
-    color: whitesmoke;
-}
-
-#studentsList li{
-    padding: 5px 10px;
-    border-top: 2px solid salmon;
-    cursor: pointer;
+/* Header */
+header{
+    background-color: #2e3e49;
     color: white;
-    font-style: italic;
+    height: 65px;
+    display: flex;
 }
 
-#studentsList li:hover{
-    background-color: lightblue;
+header .left{
+    flex: 1;
 }
 
-#studentInfo{
-    float:left;
-    width: 250px;
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid yellowgreen;
+header .title{
+    flex: 3;
+    font-size: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Global style*/
+
+button{
+    margin: 5px;
+    padding: 5px 8px;
+    background-color: #327979;
+    border: none;
     color: white;
+    font-size: 10px;
 }
+
+button:hover{
+    background-color: #329595;
+    cursor:pointer;
+}
+
+#modal-overlay{
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items:center;
+    justify-content: center;
+}
+
+#modal-overlay #modal{
+    max-width: 500px;
+    width: 100%;
+    background-color: white;
+}
+
