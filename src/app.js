@@ -59,13 +59,26 @@ getContacts()
 const contactList = document.getElementById("contact-list")
 
 const showContacts = (contact) => {
-    contacts.forEach(contact) => {
+    contacts.forEach((contact) => {
         const li = `
         <li class="contact-list-item" id=${contact.id}>
         <div class="media">
-        <div class = "letter">${contact.firstname.charAt(0)}${contact/lastname.charAt(0)</div>
-        </div>  
-        </li>
+        <div class = "letter">${contact.firstname.charAt(0)}${contact/lastname.charAt}(0)</div>
+        </div>
+        <div class="content">
+        <div class = title>
+        ${contact.firstname} ${contact.lastname}
+        </div>
+        <div class="sub-title">${contact.email}</div>
+        </div>
 
-    }
+        <div class="action">
+        <button class="edit-user">Edit</button>
+        <button class="delete-user">Delete</button>
+        </div>
+        </li>
+        `
+
+        contactList.innerHTML += 1
+    })
 }
