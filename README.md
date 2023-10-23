@@ -1,1 +1,1 @@
-# firebase-training
+# firebase_example
