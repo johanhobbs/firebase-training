@@ -132,3 +132,33 @@ const editButtonPressed = (id) => {
 
 // SECTION - display information on list item click
 const rightCol = document.getElementById("right-col");
+
+const getContact = (id) => {
+  return contacts.find((contact) => {
+    return contact.id === id;
+  });
+};
+
+const displayContactOnDetailsView = (id) => {
+  const contact = getContact(id);
+};
+
+// TODO - Display on the Right Col title
+
+const rightColTitle = rightCol.querySelector(".title");
+rightColTitle.innerHTML = contact.firstname;
+
+const rightColDetail = document.getElementById("right-col-detail");
+rightColDetail.innerHTML = `
+<div class = "label">Name:</div>
+<div class = "data">${contact.firstname} ${contact.lastname}</div>
+
+<div class = "label">Age:</div>
+<div class = "data">${contact.age}</div>
+
+<div class = "label">Phone:</div>
+<div class = "data">${contact.phone}</div>
+
+<div class = "label">Email:</div>
+<div class = "data">${contact.email}</div>
+`;
